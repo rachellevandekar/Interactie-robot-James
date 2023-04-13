@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".talkActivity"
     android:background="@drawable/bg"
-    >
+    tools:context=".enjoyNActivity">
 
     <TextView
         android:id="@+id/textViewQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Heb je al stage gelopen?"
+        android:text="Hoe komt het dat je het niet naar je zin had?"
         android:textAlignment="center"
         android:textColor="#6200ED"
         android:textSize="60sp"
@@ -28,21 +27,21 @@
         android:layout_width="400dp"
         android:layout_height="250dp"
         android:layout_marginBottom="212dp"
-        android:text="Ja"
+        android:text="Het bedrijf"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.209"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewQuestion"
-        app:layout_constraintVertical_bias="0.724" />
+        app:layout_constraintVertical_bias="0.553" />
 
     <Button
         android:id="@+id/buttonNo"
         android:layout_width="400dp"
         android:layout_height="250dp"
         android:layout_marginBottom="212dp"
-        android:text="Nee"
+        android:text="De opdracht"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,4 +49,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewQuestion"
         app:layout_constraintVertical_bias="0.724" />
+
+    <Button
+        android:id="@+id/buttonNo2"
+        android:layout_width="896dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="50dp"
+        android:text="Voldeed niet aan verwachtingen"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+

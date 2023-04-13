@@ -12,11 +12,26 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".noActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="false"
-            android:label="@string/title_activity_no"
-            android:theme="@style/Theme.MyApplication.Fullscreen" />
+            android:name=".JamesEndActivity"
+            android:exported="false" />
+        <activity
+            android:name=".funNActivity"
+            android:exported="false" />
+        <activity
+            android:name=".funYActivity"
+            android:exported="false" />
+        <activity
+            android:name=".enjoyNActivity"
+            android:exported="false" />
+        <activity
+            android:name=".enjoyYActivity"
+            android:exported="false" />
+        <activity
+            android:name=".enjoyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".answerNoActivity"
+            android:exported="false" />
         <activity
             android:name=".questionActivity"
             android:exported="false" />

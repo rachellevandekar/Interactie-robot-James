@@ -7,9 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class talkActivity extends AppCompatActivity {
+public class enjoyYActivity extends AppCompatActivity {
 
     Button btnY;
     Button btnN;
@@ -18,7 +17,7 @@ public class talkActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_talk);
+        setContentView(R.layout.activity_enjoy_yactivity);
 
         btnY = findViewById(R.id.buttonYes);
         btnN = findViewById(R.id.buttonNo);
@@ -28,15 +27,18 @@ public class talkActivity extends AppCompatActivity {
         btnY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(talkActivity.this, questionActivity.class));
+                startActivity(new Intent(enjoyYActivity.this, funYActivity.class));
             }
         });
 
         btnN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(talkActivity.this, answerNoActivity.class));
+                startActivity(new Intent(enjoyYActivity.this, funNActivity.class));
             }
         });
     }
+
+
+
 }

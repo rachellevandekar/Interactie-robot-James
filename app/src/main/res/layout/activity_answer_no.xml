@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".questionActivity">
+    tools:context=".answerNoActivity">
 
 
     <TextView
         android:id="@+id/textViewQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Op welk gebied heb je stage gelopen?"
+        android:text="Op welk gebied verwacht je stage te gaan lopen?"
         android:textAlignment="center"
         android:textColor="#6200ED"
         android:textSize="50sp"
@@ -22,8 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.096" />
-
-
     <Button
         android:id="@+id/buttonI"
         android:layout_width="900dp"

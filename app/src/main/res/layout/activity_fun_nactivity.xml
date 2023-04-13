@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".talkActivity"
     android:background="@drawable/bg"
-    >
+    tools:context=".funNActivity">
 
     <TextView
         android:id="@+id/textViewQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Heb je al stage gelopen?"
+        android:text="Zou je bij een vergelijkbaar bedrijf willen werken?"
         android:textAlignment="center"
         android:textColor="#6200ED"
         android:textSize="60sp"
@@ -51,3 +50,4 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewQuestion"
         app:layout_constraintVertical_bias="0.724" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -7,12 +7,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.speech.tts.TextToSpeech;
 import android.widget.Toast;
-
-
 
 import org.w3c.dom.Text;
 
@@ -32,7 +32,7 @@ public class talkActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+           super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_talk);
 
 
@@ -117,4 +117,7 @@ public class talkActivity extends AppCompatActivity {
 
         super.onDestroy();
     }
+
+
+
 }

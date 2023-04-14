@@ -9,7 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import java.util.Locale;
 
 public class questionActivity extends AppCompatActivity {
@@ -27,12 +26,16 @@ public class questionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
 
+
         btnI = findViewById(R.id.buttonI);
         btnID = findViewById(R.id.buttonID);
         btnHI = findViewById(R.id.buttonHI);
         btnS = findViewById(R.id.buttonS);
         btnOP = findViewById(R.id.buttonOP);
         tv = findViewById(R.id.textViewQuestion);
+
+
+
 
         TTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override
@@ -51,9 +54,12 @@ public class questionActivity extends AppCompatActivity {
             }
         });
              tv. setOnClickListener( new View.OnClickListener(){
+
+
                 @Override
                 public void onClick(View view) {
                     speak();
+
                 }
             });
 

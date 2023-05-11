@@ -7,61 +7,54 @@
     android:background="@drawable/bg"
     tools:context=".enjoyNActivity">
 
-    <TextView
-        android:id="@+id/textViewQuestion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hoe komt het dat je het niet naar je zin had?"
-        android:textAlignment="center"
-        android:textColor="#6200ED"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
 
-    <Button
-        android:id="@+id/buttonYes"
-        android:layout_width="400dp"
-        android:layout_height="250dp"
-        android:layout_marginBottom="212dp"
-        android:text="Het bedrijf"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion"
-        app:layout_constraintVertical_bias="0.553" />
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weet je waar je voor zou kiezen?"
+            android:textAlignment="center"
+            android:textColor="#6200ED"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.268" />
 
-    <Button
-        android:id="@+id/buttonNo"
-        android:layout_width="400dp"
-        android:layout_height="250dp"
-        android:layout_marginBottom="212dp"
-        android:text="De opdracht"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion"
-        app:layout_constraintVertical_bias="0.724" />
 
-    <Button
-        android:id="@+id/buttonNo2"
-        android:layout_width="896dp"
-        android:layout_height="180dp"
-        android:layout_marginBottom="50dp"
-        android:text="Voldeed niet aan verwachtingen"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion"
-        app:layout_constraintVertical_bias="1.0" />
+
+
+        <Button
+            android:id="@+id/buttonYes"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="212dp"
+            android:text="Ja"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.209"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQuestion"
+            app:layout_constraintVertical_bias="0.724" />
+
+        <Button
+            android:id="@+id/buttonNo"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="212dp"
+            android:text="Nee"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.761"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQuestion"
+            app:layout_constraintVertical_bias="0.724" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 

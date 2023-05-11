@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".talkActivity"
     android:orientation="horizontal"
-    android:background="@drawable/bg"
+    android:background="@drawable/james"
     android:padding="16dp"
     >
-
 
 
     <TextView
@@ -23,17 +22,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
-
-
-
+        app:layout_constraintVertical_bias="0.203" />
 
     <Button
         android:id="@+id/buttonYes"
         android:layout_width="400dp"
         android:layout_height="250dp"
+        android:layout_marginTop="22dp"
         android:layout_marginBottom="212dp"
         android:text="Ja"
         android:textSize="48sp"
@@ -48,6 +46,7 @@
         android:id="@+id/buttonNo"
         android:layout_width="400dp"
         android:layout_height="250dp"
+        android:layout_marginTop="22dp"
         android:layout_marginBottom="212dp"
         android:text="Nee"
         android:textSize="48sp"

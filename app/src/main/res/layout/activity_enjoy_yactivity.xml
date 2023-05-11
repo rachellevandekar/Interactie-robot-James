@@ -7,11 +7,12 @@
     android:background="@drawable/bg"
     tools:context=".enjoyYActivity">
 
+
     <TextView
         android:id="@+id/textViewQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Heb je ook tijd gemaakt voor plezier?"
+        android:text="Wil je na je studie nog doorstuderen?"
         android:textAlignment="center"
         android:textColor="#6200ED"
         android:textSize="60sp"

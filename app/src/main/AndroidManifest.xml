@@ -12,6 +12,15 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".startActivity"
+            android:exported="false" />
+        <activity
+            android:name=".continueNActivity"
+            android:exported="false" />
+        <activity
+            android:name=".continueYActivity"
+            android:exported="false" />
+        <activity
             android:name=".JamesEndActivity"
             android:exported="false" />
         <activity
@@ -34,7 +43,8 @@
             android:exported="false" />
         <activity
             android:name=".questionActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".talkActivity" />
         <activity
             android:name=".talkActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"

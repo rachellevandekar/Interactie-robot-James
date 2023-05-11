@@ -7,57 +7,55 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.ImageView;
 
-public class enjoyActivity extends AppCompatActivity {
+public class startActivity extends AppCompatActivity {
 
-
-    Button btnY;
     Button btnN;
-    TextView tv;
+    ImageView iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_enjoy);
+        setContentView(R.layout.activity_start);
+        iv = findViewById(R.id.imageView);
 
-        btnY = findViewById(R.id.buttonYes);
-        btnN = findViewById(R.id.buttonNo);
-        tv = findViewById(R.id.textViewQuestion);
 
-        playAudio();
-
-        btnY.setOnClickListener(new View.OnClickListener() {
+        iv.setOnClickListener ( new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(enjoyActivity.this, enjoyYActivity.class));
+
+                playAudio();
             }
         });
+
+
 
         btnN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(enjoyActivity.this, enjoyNActivity.class));
+                startActivity(new Intent(startActivity.this, talkActivity.class));
             }
         });
-    }
 
+
+    }
 
     private void playAudio() {
         // try {
-       MediaPlayer stem = MediaPlayer.create(enjoyActivity.this, R.raw.man4);
-      stem.start();
-/*
-        try {
+       MediaPlayer stem = MediaPlayer.create(startActivity.this, R.raw.man1);
+       stem.start();
+
+    /*    try {
             MediaPlayer stem = new MediaPlayer();
-            stem.setDataSource("/storage/emulated/0/zbos_media_library/vrouw4.m4a");
+            stem.setDataSource("/storage/emulated/0/zbos_media_library/vrouw1.m4a");
             stem.prepare();
             stem.start();
 
         }catch (Exception ex){
-//            ex.printStackTrace();}
-
- */
+            ex.printStackTrace();}
+*/
     }
+
 
 }

@@ -4,22 +4,32 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import java.util.Locale;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+
+
+
 
 public class questionActivity extends AppCompatActivity {
 
-    private TextToSpeech TTS;
+
     Button btnI;
     Button btnID;
     Button btnHI;
     Button btnS;
     Button btnOP;
     TextView tv;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,34 +44,9 @@ public class questionActivity extends AppCompatActivity {
         btnOP = findViewById(R.id.buttonOP);
         tv = findViewById(R.id.textViewQuestion);
 
+       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        playAudio();
 
-
-
-        TTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                if (status == TextToSpeech.SUCCESS) {
-                    int result = TTS.setLanguage(new Locale("nl_NL"));
-
-                    if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
-                        Log.e("TTS", "Language not supported" );}
-
-                }
-                else {
-                    Log.e("TTS", "Initialization failed" );
-                }
-
-            }
-        });
-             tv. setOnClickListener( new View.OnClickListener(){
-
-
-                @Override
-                public void onClick(View view) {
-                    speak();
-
-                }
-            });
 
 
         btnI.setOnClickListener(new View.OnClickListener() {
@@ -103,28 +88,37 @@ public class questionActivity extends AppCompatActivity {
     }
 
 
-    private void speak(){
-        String text = ("Wat leuk! Op welk gebied heb je stage gelopen?");
-        float pitch = (float) 1;
-        if (pitch < 0.1) pitch = 0.1f;
+
+    private void playAudio() {
+       // try {
+         MediaPlayer stem = MediaPlayer.create(questionActivity.this, R.raw.man3);
 
 
-        float speed = (float) 1;
-        if (speed < 0.1) speed = 0.1f;
+     // MediaPlayer stem = new MediaPlayer();
+       // stem.setDataSource("/Desktop/stemVrouw.m4a");
+     //   stem.prepare();
+        stem.start();
 
-        TTS.setPitch(pitch);
-        TTS.setSpeechRate(speed);
-        TTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+          //  Thread.sleep(5000);
+            //ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+            //executorService.schedule(questionActivity:: playAudio, 10, delayInSeconds, TimeUnit.SECONDS);
+
+           // stem.start();
+      // } catch (InterruptedException e){
+       //   e.printStackTrace();}
+
+/*
+        try {
+            MediaPlayer stem = new MediaPlayer();
+            stem.setDataSource("/storage/emulated/0/zbos_media_library/vrouw3.m4a");
+            stem.prepare();
+            stem.start();
+
+        }catch (Exception ex){
+            ex.printStackTrace();}
+*/
 
     }
 
-    @Override
-    protected void onDestroy() {
-        if(TTS != null){
-            TTS.stop();
-            TTS.shutdown();
-        }
 
-        super.onDestroy();
-    }
 }

@@ -11,7 +11,7 @@
         android:id="@+id/textViewQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Heb je het naar je zin gehad?"
+        android:text="Heb je het gevoel dat je voor de juiste studie hebt gekozen?"
         android:textAlignment="center"
         android:textColor="#6200ED"
         android:textSize="60sp"

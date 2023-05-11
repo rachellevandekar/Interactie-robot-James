@@ -9,44 +9,36 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class funNActivity extends AppCompatActivity {
-
-
+public class continueNActivity extends AppCompatActivity {
     Button btnB;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fun_nactivity);
+        setContentView(R.layout.activity_continue_nactivity);
 
-
-
-    btnB = findViewById(R.id.buttonNo);
-
-
-    playAudio();
+        btnB = findViewById(R.id.buttonNo);
+        playAudio();
 
 
 
         btnB.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            startActivity(new Intent(funNActivity.this, talkActivity.class));
-        }
-    });
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(continueNActivity.this, talkActivity.class));
+            }
+        });
+    }
 
-}
+
 
     private void playAudio() {
         // try {
-        MediaPlayer stem = MediaPlayer.create(funNActivity.this, R.raw.man7);
-      stem.start();
+       MediaPlayer stem = MediaPlayer.create(continueNActivity.this, R.raw.man9);
+       stem.start();
 
-/*
-        try {
+      /*  try {
             MediaPlayer stem = new MediaPlayer();
-            stem.setDataSource("/storage/emulated/0/zbos_media_library/vrouw7.m4a");
+            stem.setDataSource("/storage/emulated/0/zbos_media_library/vrouw9.m4a");
             stem.prepare();
             stem.start();
 
@@ -54,6 +46,4 @@ public class funNActivity extends AppCompatActivity {
             ex.printStackTrace();}
 */
     }
-
-
 }
